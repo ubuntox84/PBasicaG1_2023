@@ -1,18 +1,19 @@
 #include <iostream>
+#include <ctime>
+#include <vector>
+
 using namespace std;
 int main()
 {
-    int i = 10, j = i++, k = --i;
-    if (i > 0)
-        j++;
-    else
-        k++;
-    if (k == 0)
-        i++;
-    else if (k > 0)
-        k--;
-    else
-        k++;
-    cout << i * j * k;
-    return 0;
+    vector <int> vect;
+    vect.push_back(15);
+    vect.push_back(7);
+    vect.push_back(6);
+    vect.push_back(2);
+    vect.push_back(18);
+    vect.push_back(14);
+    int *p=&vect[0];
+    for (size_t i = 0; i < vect.size(); i++)
+        cout<<*(p+i)<<" ";    
+    return 0; 
 }
