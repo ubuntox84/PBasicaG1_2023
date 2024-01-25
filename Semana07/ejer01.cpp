@@ -3,6 +3,10 @@
 
 using namespace std;
 
+void mostra(){
+    
+}
+
 int main()
 {
     // Obtener la fecha del sistema
