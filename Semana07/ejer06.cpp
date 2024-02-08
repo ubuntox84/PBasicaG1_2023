@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void Sumar(int a,int b,int c,int d,int e,int resp){
+void Sumar(int a,int b,int c,int d,int e,int &resp){
     resp=a+b+c+d+e;
 }
 int llenar(){
